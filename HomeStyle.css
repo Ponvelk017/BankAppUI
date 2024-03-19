@@ -135,9 +135,6 @@ button {
     color: black;
 }
 
-.latesttransaction {
-    padding-top: 3%;
-}
 
 .table tbody tr td {
     padding-top: 2%;
@@ -220,4 +217,26 @@ p {
     padding-left: 0;
     padding-top: 4%;
     margin-bottom: 2%;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.duration {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 5%;
+}
+
+.durationform {
+    font-size: larger;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
 }

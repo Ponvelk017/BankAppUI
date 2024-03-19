@@ -114,7 +114,7 @@
                             <path fill-rule="evenodd"
                                 d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5" />
                         </svg>
-                        Transfer within Branch
+                        Transfer within Bank
                     </button>
                 </div>
             </li>
@@ -208,9 +208,23 @@
         </div>
         <div class="tempp">
             <div class="container transaction ">
-                <div id="latesttrans">
-                    <div class="d-flex justify-content-center row">
+                <div id="statement">
+                    <div class="justify-content-center row" style="display: flex;">
                         <h3>You Latest Transactions</h3>
+                        <div class="duration">
+                            <form id="duration" class="durationform">
+                                From
+                                <input style="width: 35%;" name="from" type="date">
+                                To
+                                <input style="width: 35%;" name="to" type="date">
+                                <button class="link-button" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="35" height="35" fill="currentColor" class="bi bi-arrow-down-square-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0" />
+                                    </svg></button>
+                            </form>
+                        </div>
                         <div class=" latesttransaction ">
                             <table class="table table-striped" style="padding-top: 5px; font-size: large;">
                                 <thead>
@@ -256,8 +270,94 @@
                                         <td>Rent</td>
                                         <td>1000234</td>
                                     </tr>
+                                    <tr>
+                                        <td>100003</td>
+                                        <td>1000000000000023</td>
+                                        <td>10000</td>
+                                        <td>Transfer</td>
+                                        <td>Success</td>
+                                        <td>12/09/2023</td>
+                                        <td>Rent</td>
+                                        <td>1000234</td>
+                                    </tr>
+                                    <tr>
+                                        <td>100003</td>
+                                        <td>1000000000000023</td>
+                                        <td>10000</td>
+                                        <td>Transfer</td>
+                                        <td>Success</td>
+                                        <td>12/09/2023</td>
+                                        <td>Rent</td>
+                                        <td>1000234</td>
+                                    </tr>
+                                    <tr>
+                                        <td>100003</td>
+                                        <td>1000000000000023</td>
+                                        <td>10000</td>
+                                        <td>Transfer</td>
+                                        <td>Success</td>
+                                        <td>12/09/2023</td>
+                                        <td>Rent</td>
+                                        <td>1000234</td>
+                                    </tr>
+                                    <tr>
+                                        <td>100003</td>
+                                        <td>1000000000000023</td>
+                                        <td>10000</td>
+                                        <td>Transfer</td>
+                                        <td>Success</td>
+                                        <td>12/09/2023</td>
+                                        <td>Rent</td>
+                                        <td>1000234</td>
+                                    </tr>
+                                    <tr>
+                                        <td>100003</td>
+                                        <td>1000000000000023</td>
+                                        <td>10000</td>
+                                        <td>Transfer</td>
+                                        <td>Success</td>
+                                        <td>12/09/2023</td>
+                                        <td>Rent</td>
+                                        <td>1000234</td>
+                                    </tr>
+                                    <tr>
+                                        <td>100003</td>
+                                        <td>1000000000000023</td>
+                                        <td>10000</td>
+                                        <td>Transfer</td>
+                                        <td>Success</td>
+                                        <td>12/09/2023</td>
+                                        <td>Rent</td>
+                                        <td>1000234</td>
+                                    </tr>
+                                    <tr>
+                                        <td>100003</td>
+                                        <td>1000000000000023</td>
+                                        <td>10000</td>
+                                        <td>Transfer</td>
+                                        <td>Success</td>
+                                        <td>12/09/2023</td>
+                                        <td>Rent</td>
+                                        <td>1000234</td>
+                                    </tr>
                                 </tbody>
                             </table>
+                            <div class="pagination">
+                                <div class="left">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                        class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                                    </svg>
+                                </div>
+                                <div class="right">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                        class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -363,30 +463,6 @@
                         </div>
                     </div>
                 </div>
-                <div id="statement" style="display: none;">
-                    <div class="d-flex  transactionbox row">
-                        <h3>You are one step ahead to take Statement</h3>
-                        <div class="col-5 align-items-center" style="padding-top: 4%;">
-                            <form id="deposit" class="text-center forms" method="post" style="padding-top: 5%;">
-                                <label for="accountno">Account Number:</label>
-                                <select id="accountno" name="accountno" class="textbox">
-                                    <option value="1000000000000012">1000000000000012</option>
-                                    <option value="1000000000000016">1000000000000016</option>
-                                </select>
-                                <label style="padding-top: 2%;" for="duration">Duration:</label>
-                                <select id="duration" name="duration" class="textbox">
-                                    <option value="1">1 Month</option>
-                                    <option value="2">2 Months</option>
-                                    <option value="3">3 Months</option>
-                                </select><br>
-                                <button type="submit">Take Statement</button>
-                            </form>
-                        </div>
-                        <div class="col-6" style="background-image: url(statement.png); background-size: cover;
-                background-position: center;">
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -410,20 +486,16 @@
         var content = document.getElementById(pair.contentId);
 
         button.addEventListener('click', function () {
-            content.style.display = (content.style.display === 'none') ? 'block' : 'none';
-
-            buttonContentPairs.forEach(otherPair => {
-                if (otherPair.contentId !== pair.contentId) {
-                    document.getElementById(otherPair.contentId).style.display = 'none';
-                }
-            });
-            var allHidden = buttonContentPairs.every(pair => {
-                return document.getElementById(pair.contentId).style.display === 'none';
-            });
-            document.getElementById('latesttrans').style.display = allHidden ? 'block' : 'none';
+            if (content.style.display !== 'block') {
+                buttonContentPairs.forEach(otherPair => {
+                    if (otherPair.contentId !== pair.contentId) {
+                        document.getElementById(otherPair.contentId).style.display = 'none';
+                    }
+                });
+                content.style.display = 'block';
+            }
         });
     });
-
 </script>
 
 </script>
