@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="StyleSheet.css" />
     <link rel="stylesheet" href="HomeStyle.css" />
     <link rel="stylesheet" href="UserManagement.css" />
-    <title>Account</title>
+    <title>User</title>
 </head>
 
 <body>
@@ -50,18 +50,19 @@
                         </svg>Accounts</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                            fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <a class="nav-link" href="TransactionManagement.html"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="30" height="30" fill="currentColor" class="bi bi-arrow-left-right"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5" />
+                        </svg>Transactions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="BranchManagement.html"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                            height="30" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                             <path
                                 d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
                         </svg>Branchs<a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                            fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-                        </svg>Complaints</a>
                 </li>
                 <li class="nav-item profile">
                     <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
@@ -138,7 +139,7 @@
                     <div class="d-flex  transactionbox row">
                         <div class="headeradd">
                             <div class="newcustomer">
-                                <h3>Add a New Customer</h3>
+                                <h3 id="textnewcustomer">Add a New Customer</h3>
                             </div>
                             <div class="newemployee" class="newemployee">
                                 <button id="newemploee" type="submit">
@@ -691,8 +692,7 @@
         { buttonId: "add-button", contentId: "addcustomer" },
         { buttonId: "view-button", contentId: "view" },
         { buttonId: "edit-button", contentId: "edit" },
-        { buttonId: "status-button", contentId: "status" },
-        { buttonId: "delete-button", contentId: "delete" }
+        { buttonId: "status-button", contentId: "status" }
     ];
 
     buttonContentPairs.forEach(pair => {
@@ -700,12 +700,10 @@
         var content = document.getElementById(pair.contentId);
 
         button.addEventListener('click', function () {
-            console.log("hi");
             if (content.style.display !== 'block') {
                 buttonContentPairs.forEach(otherPair => {
-                    var otherContent = document.getElementById(otherPair.contentId);
-                    if (otherContent.style.display === 'block' && otherPair.contentId !== pair.contentId) {
-                        otherContent.style.display = 'none';
+                    if (otherPair.contentId !== pair.contentId) {
+                        document.getElementById(otherPair.contentId).style.display = 'none';
                     }
                 });
                 content.style.display = 'block';
@@ -722,9 +720,11 @@
             : 'none';
         if (document.getElementById("customer").style.display === 'none') {
             document.getElementById("newemploee").innerHTML = 'Add new Customer';
+            document.getElementById("textnewcustomer").innerHTML = 'Add a new Employee'
         }
         else {
             document.getElementById("newemploee").innerHTML = 'Add new Employee';
+            document.getElementById("textnewcustomer").innerHTML = 'Add a new Customer'
         }
     });
 </script>
