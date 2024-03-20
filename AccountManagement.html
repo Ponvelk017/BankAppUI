@@ -65,8 +65,8 @@
                         </svg>Branchs<a>
                 </li>
                 <li class="nav-item profile">
-                    <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                            fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <a class="nav-link" href="EmployeeProfile.html"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                            height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                             <path fill-rule="evenodd"
                                 d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
@@ -82,16 +82,6 @@
         <ul class="nav flex-column">
             <li class="nav-item">
                 <div class="nav-link nav-linka text-center">
-                    <button type="submit" id="add-button" class="link-button"><svg xmlns="http://www.w3.org/2000/svg"
-                            width="50" height="50" fill="currentColor" class="bi bi-bag-plus-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5z" />
-                        </svg><br>
-                        Add new Account
-                    </button>
-            </li>
-            <li class="nav-item">
-                <div class="nav-link nav-linka text-center">
                     <button type="submit" id="view-button" class="link-button"><svg xmlns="http://www.w3.org/2000/svg"
                             width="50" height="50" fill="currentColor" class="bi bi-person-vcard-fill"
                             viewBox="0 0 16 16">
@@ -99,6 +89,16 @@
                                 d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0" />
                         </svg><br>
                         view Account
+                    </button>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link nav-linka text-center">
+                    <button type="submit" id="add-button" class="link-button"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="50" height="50" fill="currentColor" class="bi bi-bag-plus-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5z" />
+                        </svg><br>
+                        Add new Account
                     </button>
                 </div>
             </li>
@@ -133,7 +133,7 @@
     <div class="container account">
         <div class="tempp" style="padding-bottom: 1%;">
             <div class="container transaction">
-                <div id="addaccount" style="display: block;">
+                <div id="addaccount" style="display: none;">
                     <h3>Add a New Account</h3>
                     <div class="d-flex  transactionbox row">
                         <div id="account" class="col-5 align-items-center">
@@ -164,7 +164,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="view" style="display: none;">
+                <div id="view" style="display: block;">
                     <div id="statement">
                         <div class="justify-content-center row" style="display: flex;">
                             <h3>Accounts</h3>

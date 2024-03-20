@@ -65,8 +65,8 @@
                         </svg>Branchs<a>
                 </li>
                 <li class="nav-item profile">
-                    <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                            fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <a class="nav-link" href="EmployeeProfile.html"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                            height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                             <path fill-rule="evenodd"
                                 d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
@@ -113,22 +113,24 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">S.No</th>
-                                        <th scope="col">Customer Id</th>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Mobile Number</th>
-                                        <th scope="col">Email</th>
-                                        <th scope="col">Address</th>
+                                        <th scope="col">Transaction Id</th>
+                                        <th scope="col">User Id</th>
+                                        <th scope="col">Sender Accoutn</th>
+                                        <th scope="col">Receiver Account</th>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">Date & Time</th>
                                         <th scope="col">View</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>1</td>
-                                        <td>P.Ramanujam</td>
-                                        <td>9090909090</td>
-                                        <td>rama@gmail.com</td>
-                                        <td>123,Vadapalani,chennai-678901</td>
+                                        <td>1001</td>
+                                        <td>12</td>
+                                        <td>10000000000000012</td>
+                                        <td>-</td>
+                                        <td>Debit</td>
+                                        <td>12-03-2024 12:00 PM</td>
                                         <td> <button type="button" class="btn link-button" data-bs-toggle="modal"
                                                 data-bs-target="#staticBackdrop">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
@@ -141,11 +143,12 @@
                                     </tr>
                                     <tr>
                                         <td>1</td>
-                                        <td>1</td>
-                                        <td>P.Ramanujam</td>
-                                        <td>9090909090</td>
-                                        <td>rama@gmail.com</td>
-                                        <td>123,Vadapalani,chennai-678901</td>
+                                        <td>1001</td>
+                                        <td>12</td>
+                                        <td>10000000000000012</td>
+                                        <td>-</td>
+                                        <td>Debit</td>
+                                        <td>12-03-2024 12:00 PM</td>
                                         <td> <button type="button" class="btn link-button" data-bs-toggle="modal"
                                                 data-bs-target="#staticBackdrop">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
@@ -158,6 +161,126 @@
                                     </tr>
                                 </tbody>
                             </table>
+                        </div>
+                    </div>
+                    <!--A modal for view transaction history  -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered .modal-dialog-custom" style="max-width:50%;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Transaction Details</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="profile"
+                                        style="background-color: white; border-radius: 2%; padding-left: 0;padding-top: 4%; margin-bottom: 2%;">
+                                        <div class="profile-img" style="display: flex; align-items: end;">
+                                            <img src="transfer.png" alt="Profile Picture" class="profile-picture"
+                                                style="margin-right: 20px; padding-bottom: 5%; width: 50%;">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="col">
+                                                            <p>Transaction Id</p>
+                                                        </th>
+                                                        <td>:</td>
+                                                        <td>
+                                                            <p> 10002</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">
+                                                            <p>User Id</p>
+                                                        </th>
+                                                        <td>:</td>
+                                                        <td>
+                                                            <p> 12</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">
+                                                            <p>Sender Account</p>
+                                                        </th>
+                                                        <td>:</td>
+                                                        <td>
+                                                            <p> 10000000000000023</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">
+                                                            <p>Receiver Account</p>
+                                                        </th>
+                                                        <td>:</td>
+                                                        <td>
+                                                            <p> 10000000000002323</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">
+                                                            <p>Type</p>
+                                                        </th>
+                                                        <td>:</td>
+                                                        <td>
+                                                            <p>Debit</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">
+                                                            <p>Date and Time</p>
+                                                        </th>
+                                                        <td>:</td>
+                                                        <td>
+                                                            <p> 12-03-2024 12:00 PM</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">
+                                                            <p>Status</p>
+                                                        </th>
+                                                        <td>:</td>
+                                                        <td>
+                                                            <p> Success</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">
+                                                            <p>IFSC Code</p>
+                                                        </th>
+                                                        <td>:</td>
+                                                        <td>
+                                                            <p>ASDFG12345</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">
+                                                            <p>Amount</p>
+                                                        </th>
+                                                        <td>:</td>
+                                                        <td>
+                                                            <p>1000</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">
+                                                            <p>Closing Balance</p>
+                                                        </th>
+                                                        <td>:</td>
+                                                        <td>
+                                                            <p> 1200000</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="pagination">
